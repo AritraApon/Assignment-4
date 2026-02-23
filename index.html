@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Tracker</title>
+    <link rel="shortcut icon" href="jobs.png" type="image/x-icon">
     <!-- tailwind css and daisyUI  Cdn LInk -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -88,9 +89,9 @@
 
             <!-- card 1  -->
             <div id="allCards"
-                class="card_container  flex  justify-between  bg-base-200  shadow rounded-lg px-3 border-l-10 border-blue-500">
+                class="card_container  flex  justify-between  bg-base-200  shadow rounded-lg p-3 md:p-6 border-l-10 border-blue-500">
                 <!-- left side  -->
-                <div class=" card-body space-y-4 ">
+                <div class="space-y-4">
                     <div>
                         <!-- company name  -->
                         <h1 class="company_name  font-medium text-[1.25rem]">Mobile First Corp</h1>
@@ -113,7 +114,7 @@
                         <p class="job_descriptions  text-[14px] md:text-[1rem]">Build cross-platform mobile applications
                             using React
                             Native. Work on products used by
-                            millions of users worldwide.</p>
+                            millions of users worldwide</p>
                     </div>
 
                     <!-- button main  -->
@@ -121,6 +122,7 @@
                         <!-- interviewButton  -->
                         <button id="interviewButton"
                             class="interview_Button  btn btn-outline btn-success">Interview</button>
+
                         <!-- rejectedButton  -->
                         <button id="rejectedButton" class="rejected_Button btn btn-outline btn-error">Rejected</button>
                     </div>
