@@ -238,6 +238,20 @@ function renderRejected() {
 
     filteredSection.innerHTML = '';
 
+
+    if (rejectedList.length === 0) {
+        filteredSection.innerHTML = `
+        <div class=" text-center bg-base-200  shadow rounded-lg py-3 md:py-10">
+                <img class="mx-auto" src="jobs.png" alt="">
+                <p class="text-xl">No jobs available</p>
+                <p>Check back soon for new job opportunities</p>
+            </div> 
+        `;
+        return;
+    }
+
+
+
     if (rejectedList.length === 0) {
         filteredSection.innerHTML = emptyCard;
         return;
