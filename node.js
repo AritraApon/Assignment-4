@@ -156,6 +156,7 @@ mainContainer.addEventListener('click', function (event) {
             renderRejected();
         }
 
+
         calculateCount();
     }
     // delbtn
@@ -165,7 +166,8 @@ mainContainer.addEventListener('click', function (event) {
         interviewList = interviewList.filter(item => item.companyName !== companyName);
         rejectedList = rejectedList.filter(item => item.companyName !== companyName);
         card.remove('hidden');
-        alert(" 🚨Are you sure you want to delete? ⚠️⚠️ ")
+        alert(`🚨Deleted successfully ✅✅  
+ ⌛at ${new Date().toLocaleString()} `)
         calculateCount();
     }
 
@@ -184,7 +186,7 @@ function renderInterview() {
                 <img class="mx-auto" src="jobs.png" alt="">
                 <p class="text-xl">No jobs available</p>
                 <p>Check back soon for new job opportunities</p>
-            </div> 
+            </div>
         `;
         return;
     }
